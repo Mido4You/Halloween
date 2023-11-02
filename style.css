@@ -1,10 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Butcherman&family=Roboto&display=swap');
 * {
     margin: 0;
     padding: 0;
 
 }
 body {
-    background-color: rgb(170, 111, 0);
+    background-color: black;
 }
 .banner {
     width: 100%;
@@ -12,29 +13,77 @@ body {
     background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(background.webp);
     background-size: cover;
     background-position: center;
+    scroll-behavior: smooth;
+    background-attachment: fixed;
+}
+.opis-background {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(pumpkin2.jpg);
+    background-size: cover;
+    background-position: center;
+    scroll-behavior: smooth;
+    background-attachment: fixed;
+}
+.historia-background {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(spooky.jpg);
+    background-size: cover;
+    background-position: center;
+    scroll-behavior: smooth;
+    background-attachment: fixed;
+}
+.nazwa-background {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(pumpkin3.png);
+    background-size: cover;
+    background-position: center;
+    scroll-behavior: smooth;
+    background-attachment: fixed;
+}
+.zwyczaje-background {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(wiedzma.jpg);
+    background-size: cover;
+    background-position: center;
+    scroll-behavior: smooth;
+    background-attachment: fixed;
+}
+.symbole-background {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(pumpkin4.jpg);
+    background-size: cover;
+    background-position: center;
+    scroll-behavior: smooth;
+    background-attachment: fixed;
 }
 .navbar {
     width: 85%;
     margin: auto;
-    padding: 35px 0;
+    padding: 5px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 .logo {
     width: 120px;
-    cursor: pointer;
 }
 .navbar ul li {
     list-style: none;
     display: inline-block;
-    margin: 0, 20px;
     position: relative;
+    margin: 0 10px;
 }
 .navbar ul li a {
     text-decoration: none;
     color: white;
     text-transform: uppercase;
+    font-family: "Butcherman", sans-serif;
+    font-size: 20px;
 }
 .navbar ul li::after {
     content: "";
@@ -49,6 +98,12 @@ body {
 .navbar ul li:hover::after {
     width: 100%;
 }
+nav {
+    position: fixed;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8));
+    z-index: 10;
+}
 .content {
     width: 100%;
     position: absolute;
@@ -58,11 +113,72 @@ body {
     color: white;
 }
 .content h1 {
-    font-size: 70px;
     margin-top: 80px;
 }
 .content p {
+    margin: 0 500px;
+}
+h1 {
+    font-size: 70px;
+    font-family: "Butcherman", sans-serif;
+}
+h2 {
+    font-size: 60px;
+    font-family: "Butcherman", sans-serif;
+}
+p {
     margin: 20px auto;
     font-weight: 100;
     line-height: 25px;
+    font-family: "Roboto", sans-serif;
+}
+.opis {
+    width: 100%;
+    position: absolute;
+    top: 150%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+}
+.historia {
+    width: 100%;
+    position: absolute;
+    top: 250%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+}
+.historia p {
+    margin: 0 100px;
+    text-align: justify;
+}
+.nazwa {
+    width: 100%;
+    position: absolute;
+    top: 350%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+}
+.zwyczaje {
+    width: 100%;
+    position: absolute;
+    top: 450%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+}
+.zwyczaje p {
+    margin: 0 500px;
+}
+.symbole{
+    width: 100%;
+    position: absolute;
+    top: 550%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+}
+.symbole p {
+    margin: 0 500px;
 }
