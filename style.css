@@ -182,3 +182,8 @@ p {
 .symbole p {
     margin: 0 500px;
 }
+footer {
+    color: white;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+}
